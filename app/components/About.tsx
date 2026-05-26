@@ -1,4 +1,16 @@
+import Image from "next/image";
 import { HIGHLIGHTS } from "@/lib/constants";
+
+const gallery = [
+  { src: "/kho1.jpg", alt: "Kho bãi VHG Logistics" },
+  { src: "/kho2.jpg", alt: "Khu vực lưu kho và phân loại hàng" },
+  { src: "/kho3.jpg", alt: "Đóng gói và xử lý đơn hàng" },
+  { src: "/kho4.jpg", alt: "Container và vận chuyển" },
+  { src: "/kho5.jpg", alt: "Kho tổng và bốc xếp hàng hóa" },
+  { src: "/kho6.jpg", alt: "Hệ thống kho bãi tiêu chuẩn" },
+  { src: "/kho7.jpg", alt: "Đội ngũ vận hành" },
+  { src: "/kho8.jpg", alt: "Đội ngũ và hoạt động logistics" },
+];
 
 export function About() {
   return (
@@ -13,8 +25,8 @@ export function About() {
             <p className="mt-4 leading-relaxed text-vhg-muted">
               Công ty vận tải quốc tế với mạng lưới văn phòng tại các cảng lớn,
               tập trung Hà Nội, TP.HCM, Quảng Châu và Moscow. Đội ngũ nhân viên
-              giàu kinh nghiệm từ nhiều quốc gia — cam kết uy tín, tận tâm và
-              hiệu quả trong từng lô hàng.
+              giàu kinh nghiệm từ nhiều quốc gia — cam kết biến các lộ trình xuyên
+              biên giới phức tạp trở nên đơn giản, minh bạch và an toàn nhất.
             </p>
             <p className="mt-4 leading-relaxed text-vhg-muted">
               Ngoài tuyến Việt – Trung, chúng tôi cung cấp vận chuyển{" "}
@@ -45,15 +57,28 @@ export function About() {
           </ul>
         </div>
 
-        <div
-          className="mt-12 flex min-h-[200px] items-center justify-center rounded-2xl border border-dashed border-vhg-border bg-vhg-surface/50 px-6 text-center text-sm text-vhg-muted"
-          role="img"
-          aria-label="Khu vực hình ảnh — sẽ bổ sung sau"
-        >
-          <p>
-            Khu vực hình ảnh (kho bãi, container, đội ngũ…)
-            <br />
-            <span className="text-vhg-yellow">Bạn có thể bổ sung ảnh sau</span>
+        <div className="mt-12">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-2">
+            {gallery.map((item) => (
+              <div
+                key={item.src}
+                className="relative overflow-hidden rounded-2xl border border-vhg-border bg-vhg-surface"
+              >
+                <div className="relative aspect-[4/3]">
+                  <Image
+                    src={item.src}
+                    alt={item.alt}
+                    fill
+                    sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                    className="object-cover"
+                    priority={item.src === "/kho1.jpg"}
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+          <p className="mt-4 text-center text-sm text-vhg-muted">
+            Hình ảnh kho bãi, container và đội ngũ vận hành
           </p>
         </div>
       </div>

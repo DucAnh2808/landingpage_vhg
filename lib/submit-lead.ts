@@ -4,6 +4,7 @@ export type LeadPayload = {
   email: string;
   company: string;
   route: string;
+  notes?: string;
 };
 
 export function parseLeadParams(
@@ -20,6 +21,7 @@ export function parseLeadParams(
     email: pick("email"),
     company: pick("company"),
     route: pick("route"),
+    notes: pick("notes"),
   };
 
   if (
@@ -32,6 +34,10 @@ export function parseLeadParams(
     return null;
   }
 
+  if (!lead.notes) {
+    delete (lead as { notes?: string }).notes;
+  }
+
   return lead;
 }
 
@@ -42,6 +48,9 @@ function buildScriptUrl(base: string, lead: LeadPayload): string {
   url.searchParams.set("email", lead.email);
   url.searchParams.set("company", lead.company);
   url.searchParams.set("route", lead.route);
+  if (lead.notes) {
+    url.searchParams.set("notes", lead.notes);
+  }
   url.searchParams.set("submittedAt", new Date().toISOString());
   return url.toString();
 }

@@ -6,11 +6,13 @@ export function Services() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="max-w-2xl">
           <h2 className="text-2xl font-bold sm:text-3xl">
-            Dịch vụ <span className="italic text-vhg-yellow">nổi bật</span>
+            Hệ sinh thái{" "}
+            <span className="italic text-vhg-yellow">Giải pháp toàn diện</span>
           </h2>
           <p className="mt-3 text-vhg-muted">
-            Chuỗi dịch vụ linh hoạt, phù hợp từng loại hàng và nhu cầu doanh
-            nghiệp — hợp tác các hãng tàu lớn như Maersk, Evergreen.
+            Thiết kế các giải pháp chuỗi cung ứng linh hoạt, may đo riêng cho
+            từng đặc thù ngành hàng, giúp doanh nghiệp tối ưu chi phí vận hành
+            và tăng tốc độ tiếp cận thị trường.
           </p>
         </div>
 

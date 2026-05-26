@@ -13,20 +13,17 @@ export function Hero() {
       />
       <div className="relative mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 sm:py-24 lg:grid-cols-2 lg:items-center lg:gap-16">
         <div>
-          <p className="mb-4 inline-block rounded-full border border-vhg-yellow/40 bg-vhg-yellow/10 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-vhg-yellow">
-            Thuộc hệ sinh thái VHG HOLDING
-          </p>
           <h1 className="text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">
             Giải pháp{" "}
-            <span className="italic text-vhg-yellow">logistics</span> quốc tế
-            — nhanh, an toàn, tối ưu chi phí
+            <span className="italic text-vhg-yellow">Fulfillment</span> xuyên
+            biên giới — Xử lý chính xác, tối ưu vận hành
           </h1>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-vhg-muted sm:text-lg">
-            {COMPANY.legalName} chuyên vận tải đa phương thức (biển, bộ, đường
-            sắt), mạnh tuyến{" "}
-            <strong className="text-foreground">Trung Quốc – Việt Nam</strong>{" "}
-            và <strong className="text-foreground">Nga – Việt Nam</strong>, dịch
-            vụ door-to-door, kho bãi và xử lý hàng lẻ.
+            VHG Logistics cung cấp dịch vụ hoàn tất đơn hàng (Fulfillment) toàn
+            diện với hệ thống tổng kho tại phía Bắc Việt Nam. Chúng tôi tiếp
+            nhận, quản lý tồn kho, đóng gói, dán nhãn và xử lý giao hàng chặng
+            cuối, giúp doanh nghiệp tháo gỡ gánh nặng vận hành và tăng tốc chuỗi
+            cung ứng.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <a
@@ -48,16 +45,30 @@ export function Hero() {
 
         <div className="grid grid-cols-2 gap-4">
           {[
-            { value: "3+", label: "Tuyến quốc tế chủ lực" },
-            { value: "36h", label: "Hải quan tối đa" },
-            { value: "D2D", label: "Door-to-door" },
-            { value: "24/7", label: "Hỗ trợ khách hàng" },
+            {
+              value: "Miền Bắc Việt Nam",
+              label: "Hệ thống tổng kho hiện đại",
+              compact: true,
+            },
+            { value: "24h", label: "Tốc độ đóng gói & xuất kho" },
+            {
+              value: "Thời gian thực",
+              label: "Đồng bộ & kiểm soát tồn kho dữ liệu",
+              compact: true,
+            },
+            { value: "Tối ưu 30%", label: "Chi phí kho bãi và nhân sự" },
           ].map((stat) => (
             <div
               key={stat.label}
               className="rounded-2xl border border-vhg-border bg-vhg-surface p-5 sm:p-6"
             >
-              <p className="text-2xl font-bold italic text-vhg-yellow sm:text-3xl">
+              <p
+                className={`font-bold italic text-vhg-yellow ${
+                  stat.compact
+                    ? "text-lg leading-snug sm:text-xl"
+                    : "text-2xl sm:text-3xl"
+                }`}
+              >
                 {stat.value}
               </p>
               <p className="mt-1 text-sm text-vhg-muted">{stat.label}</p>

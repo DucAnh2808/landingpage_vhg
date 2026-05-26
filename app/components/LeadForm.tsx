@@ -10,6 +10,7 @@ type FormState = {
   email: string;
   company: string;
   route: string;
+  notes: string;
 };
 
 const initial: FormState = {
@@ -18,6 +19,7 @@ const initial: FormState = {
   email: "",
   company: "",
   route: SHIPPING_ROUTES[0],
+  notes: "",
 };
 
 export function LeadForm() {
@@ -97,11 +99,10 @@ export function LeadForm() {
               Đăng ký <span className="italic text-vhg-yellow">tư vấn</span>
             </h2>
             <p className="mt-3 text-vhg-muted">
-              Điền thông tin — dữ liệu được ghi vào hệ thống của VHG Logistics
-              để đội ngũ liên hệ báo giá và tư vấn tuyến phù hợp.
+            Hãy chia sẻ nhu cầu vận chuyển của doanh nghiệp bạn để đội ngũ VHG Logistics liên hệ báo giá và tư vấn giải pháp phù hợp trong vòng 24 giờ.
             </p>
             <p className="mt-6 text-sm text-vhg-muted">
-              Hoặc gọi trực tiếp:{" "}
+              Hotline hỗ trợ:{" "}
               <a
                 href={COMPANY.hotlineHref}
                 className="font-bold text-vhg-yellow hover:underline"
@@ -184,6 +185,20 @@ export function LeadForm() {
                     </option>
                   ))}
                 </select>
+              </Field>
+
+              <Field
+                label="Ghi chú thêm về hàng hóa (loại hàng, khối lượng, thời gian dự kiến...)"
+                className="sm:col-span-2"
+              >
+                <textarea
+                  name="notes"
+                  rows={4}
+                  value={form.notes}
+                  onChange={(e) => update("notes", e.target.value)}
+                  className={inputClass}
+                  placeholder="Ví dụ: hàng tiêu dùng ~300kg, cần nhận trước 15/06..."
+                />
               </Field>
             </div>
 

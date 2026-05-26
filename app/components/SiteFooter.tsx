@@ -11,15 +11,16 @@ export function SiteFooter() {
         <div className="flex flex-col gap-8 border-b border-white/10 pb-10 sm:flex-row sm:items-start sm:justify-between">
           <div>
             <Image
-              src="/logo.png"
+              src={`${COMPANY.logoSrc}?v=${COMPANY.logoVersion}`}
               alt={COMPANY.name}
-              width={120}
-              height={40}
+              width={225}
+              height={225}
               className="h-9 w-auto"
+              unoptimized
             />
             <p className="mt-3 max-w-xs text-vhg-muted">
-              {COMPANY.legalName} — giải pháp logistics đa phương thức, thuộc
-              VHG HOLDING.
+              {COMPANY.legalName} — giải pháp Fulfillment, tổng kho phía Bắc
+              Việt Nam.
             </p>
           </div>
           <div className="flex flex-col gap-2">

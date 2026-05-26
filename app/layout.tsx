@@ -9,13 +9,17 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: `${COMPANY.name} | Giải pháp logistics quốc tế`,
+  title: `${COMPANY.name} | Giải pháp Fulfillment xuyên biên giới`,
   description:
-    "VHG Logistics — vận chuyển Trung – Việt, Nga – Việt, đa phương thức, door-to-door, hải quan. Đăng ký tư vấn ngay.",
+    "VHG Logistics — dịch vụ hoàn tất đơn hàng (Fulfillment) với hệ thống tổng kho tại phía Bắc Việt Nam. Đăng ký tư vấn ngay.",
+  icons: {
+    icon: [{ url: "/logo.png" }],
+    apple: [{ url: "/logo.png" }],
+  },
   openGraph: {
-    title: `${COMPANY.name} | Giải pháp logistics quốc tế`,
+    title: `${COMPANY.name} | Giải pháp Fulfillment xuyên biên giới`,
     description:
-      "Thuộc hệ sinh thái VHG HOLDING. Tuyến chủ lực Trung Quốc – Việt Nam, Nga – Việt Nam.",
+      "Giải pháp Fulfillment xuyên biên giới — xử lý chính xác, tối ưu vận hành. Tổng kho phía Bắc Việt Nam.",
     url: COMPANY.website,
   },
 };

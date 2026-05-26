@@ -6,6 +6,9 @@ export const COMPANY = {
   hotline: "0969 265 726",
   hotlineHref: "tel:+84969265726",
   sheetId: "1_pFnIgTBlRZqjfW8GpIigQtgCr7cwUPGUEV8jYxtMhE",
+  /** Tăng số này mỗi lần đổi public/logo.png để tránh cache trình duyệt / Next Image */
+  logoVersion: 2,
+  logoSrc: "/logo.png",
 } as const;
 
 export const SHIPPING_ROUTES = [
@@ -22,31 +25,31 @@ export const SHIPPING_ROUTES = [
 
 export const SERVICES = [
   {
-    title: "Vận chuyển Trung – Việt",
+    title: "Vận tải xuyên biên giới",
     description:
-      "Nhận hàng tại kho Chiết Giang, Quảng Châu; vận chuyển chính ngạch, thủ tục minh bạch, lộ trình ổn định.",
+      "Khai thác thế mạnh các tuyến trọng điểm Trung Quốc – Việt Nam và Đông Nam Á. Vận chuyển chính ngạch, lịch trình khởi hành cố định giúp đối tác chủ động hoàn toàn nguồn hàng.",
   },
   {
-    title: "Vận chuyển Nga – Việt",
+    title: "Vận tải đa phương thức",
     description:
-      "Door-to-door toàn diện với mạng lưới tại Moscow và các cảng lớn, đội ngũ đa quốc gia giàu kinh nghiệm.",
+      "Giải pháp Door-to-Door chuyên sâu tuyến Nga – Việt và toàn cầu. Phối hợp linh hoạt đường biển (FCL/LCL), đường bộ và hàng không với cước phí cạnh tranh từ các hãng tàu top đầu.",
   },
   {
-    title: "Đường biển & hàng không",
+    title: "Lưu kho & fulfillment B2B",
     description:
-      "Chuyên chở hàng hóa đa dạng — từ tiêu dùng, máy móc đến nguyên vật liệu; hợp tác Maersk, Evergreen.",
+      "Hệ thống tổng kho tiêu chuẩn tại Chiết Giang, Quảng Châu, Bằng Tường, Hà Nội, TP.HCM. Tích hợp công nghệ quản lý tồn kho thời gian thực, đóng gói và xử lý đơn hàng chuyên nghiệp, chính xác.",
   },
   {
-    title: "Hải quan & khai báo",
+    title: "Hải quan & ủy thác XNK",
     description:
-      "Dịch vụ hải quan tối đa 36 giờ, khai báo chuyên nghiệp, hỗ trợ xuất nhập khẩu minh bạch.",
+      "Đội ngũ am hiểu chính sách bản địa, cam kết thông quan tối đa 36 giờ. Xử lý trọn gói các thủ tục pháp lý, chứng từ (C/O Form E...), đảm bảo luồng hàng lưu thông.",
   },
 ] as const;
 
 export const HIGHLIGHTS = [
   "Logistics đa phương thức: biển, bộ, đường sắt",
   "Door-to-door, kho bãi & xử lý hàng lẻ",
-  "Mạng lưới Hà Nội, TP.HCM, Quảng Châu, Moscow",
+  "Mạng lưới Hà Nội, TP.HCM, Chiết Giang, Quảng Châu, Bằng Tường, Moscow",
   "Tiết kiệm chi phí, rút ngắn thời gian vận chuyển",
 ] as const;
 
