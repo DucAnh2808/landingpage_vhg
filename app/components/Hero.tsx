@@ -46,7 +46,7 @@ export function Hero() {
         <div className="grid grid-cols-2 gap-4">
           {[
             {
-              value: "Miền Bắc Việt Nam",
+              value: "26000m2",
               label: "Hệ thống tổng kho hiện đại",
               compact: true,
             },

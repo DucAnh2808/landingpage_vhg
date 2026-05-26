@@ -11,11 +11,11 @@ export function SiteFooter() {
         <div className="flex flex-col gap-8 border-b border-white/10 pb-10 sm:flex-row sm:items-start sm:justify-between">
           <div>
             <Image
-              src={`${COMPANY.logoSrc}?v=${COMPANY.logoVersion}`}
+              src={`/logo2.jpeg?v=${COMPANY.logoVersion}`}
               alt={COMPANY.name}
               width={225}
               height={225}
-              className="h-9 w-auto"
+              className="h-16 w-auto sm:h-20"
               unoptimized
             />
             <p className="mt-3 max-w-xs text-vhg-muted">

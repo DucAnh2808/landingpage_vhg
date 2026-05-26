@@ -37,7 +37,7 @@ export const SERVICES = [
   {
     title: "Lưu kho & fulfillment B2B",
     description:
-      "Hệ thống tổng kho tiêu chuẩn tại Chiết Giang, Quảng Châu, Bằng Tường, Hà Nội, TP.HCM. Tích hợp công nghệ quản lý tồn kho thời gian thực, đóng gói và xử lý đơn hàng chuyên nghiệp, chính xác.",
+      "Hệ thống tổng kho tiêu chuẩn tại Đông Anh, Hà Nội. Tích hợp công nghệ quản lý tồn kho thời gian thực, đóng gói và xử lý đơn hàng chuyên nghiệp, chính xác.",
   },
   {
     title: "Hải quan & ủy thác XNK",

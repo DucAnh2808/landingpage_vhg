@@ -3,7 +3,7 @@
  *
  * Sheet: https://docs.google.com/spreadsheets/d/1_pFnIgTBlRZqjfW8GpIigQtgCr7cwUPGUEV8jYxtMhE
  *
- * Cột hàng 1: Thời gian | Họ tên | SĐT | Email | Công ty | Tuyến hàng
+ * Cột hàng 1: Thời gian | Họ tên | SĐT | Email | Công ty | Tuyến hàng | Ghi chú
  *
  * Lưu ý: POST từ server thường bị redirect 302 → mất dữ liệu.
  * Next.js gửi GET với query params (doGet) — ổn định hơn.
@@ -19,6 +19,7 @@ function appendLead_(data) {
     data.email || "",
     data.company || "",
     data.route || "",
+    data.notes || "",
   ]);
   return jsonResponse({ ok: true });
 }
