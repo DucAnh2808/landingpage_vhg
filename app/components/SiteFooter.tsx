@@ -51,10 +51,10 @@ export function SiteFooter() {
               <p className="mt-1 text-vhg-muted">
                 Hotline:{" "}
                 <a
-                  href={COMPANY.hotlineHref}
+                  href={office.hotlineHref}
                   className="text-foreground hover:text-vhg-yellow"
                 >
-                  {COMPANY.hotline}
+                  {office.hotline}
                 </a>
               </p>
             </div>

@@ -57,13 +57,39 @@ export const OFFICES = [
   {
     name: "Trụ sở TP.HCM",
     address: "46 Bạch Đằng, Phường 2, Tân Bình, TP. Hồ Chí Minh",
+    hotline: COMPANY.hotline,
+    hotlineHref: COMPANY.hotlineHref,
   },
   {
     name: "Chi nhánh Hà Nội",
     address: "Số 20, D09, KĐT Geleximco, Lê Trọng Tấn, Dương Nội, Hà Đông",
+    hotline: COMPANY.hotline,
+    hotlineHref: COMPANY.hotlineHref,
   },
   {
     name: "Chi nhánh Hải Phòng",
     address: "TTC Building, 630 Lê Thánh Tông, Quận Hải An, Hải Phòng",
+    hotline: COMPANY.hotline,
+    hotlineHref: COMPANY.hotlineHref,
+  },
+  {
+    name: "Chi nhánh Liên Bang Nga",
+    address: "1st Tverskaya, Moscow, Nga.",
+    hotline: "+79166602258",
+    hotlineHref: "tel:+79166602258",
+  },
+  {
+    name: "Chi nhánh Trung Quốc — Quảng Châu",
+    address:
+      "No. 62, Dalang North Road, Baiyun Lake Street, Baiyun District, Guangzhou",
+    hotline: "15322046958",
+    hotlineHref: "tel:+8615322046958",
+  },
+  {
+    name: "Chi nhánh Trung Quốc — Chiết Giang",
+    address:
+      "No. 88 Qiushi Road, Beiyuan Street, Yiwu City, Zhejiang Province",
+    hotline: "15158939112",
+    hotlineHref: "tel:+8615158939112",
   },
 ] as const;
