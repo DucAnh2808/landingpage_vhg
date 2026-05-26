@@ -1,0 +1,162 @@
+{
+  "nav": {
+    "services": "Services",
+    "about": "About us",
+    "consultation": "Get consultation"
+  },
+  "header": {
+    "cta": "Talk to us",
+    "language": "Language"
+  },
+  "hero": {
+    "titlePrefix": "Cross-border",
+    "titleEmphasis": "Fulfillment",
+    "titleSuffix": "— accurate processing, optimized operations",
+    "description": "VHG Logistics provides end-to-end fulfillment with a modern warehouse system in Northern Vietnam. We handle receiving, inventory management, packing, labeling, and last-mile processing—helping businesses reduce operational burden and accelerate supply chains.",
+    "primaryCta": "Free consultation sign-up",
+    "secondaryCta": "Visit official website",
+    "stats": [
+      { "value": "26,000 m²", "label": "Modern warehouse system", "compact": true },
+      { "value": "24h", "label": "Packing & dispatch speed" },
+      { "value": "Real-time", "label": "Inventory sync & control", "compact": true },
+      { "value": "Save 30%", "label": "Warehouse & staffing costs" }
+    ]
+  },
+  "services": {
+    "titlePrefix": "An ecosystem of",
+    "titleEmphasis": "end-to-end solutions",
+    "description": "Flexible supply chain solutions tailored to each industry—helping businesses optimize operating costs and speed up market entry."
+  },
+  "about": {
+    "titlePrefix": "Why choose",
+    "titleEmphasis": "VHG Logistics",
+    "titleSuffix": "?",
+    "p1": "An international logistics company with offices across major ports, focused in Hanoi, Ho Chi Minh City, Guangzhou, and Moscow. Our experienced, multinational team is committed to making complex cross-border routes simple, transparent, and secure.",
+    "p2Prefix": "Beyond Vietnam–China, we also operate",
+    "p2Strong1": "China–Cambodia",
+    "p2Middle": "and",
+    "p2Strong2": "China–Thailand",
+    "p2Suffix": "lanes for consumer goods, household items, and e-commerce.",
+    "galleryCaption": "Warehouse, containers, and operations team",
+    "galleryAlt": [
+      "VHG Logistics warehouse",
+      "Storage and sorting area",
+      "Packing and order processing",
+      "Containers and transportation",
+      "Main warehouse and loading",
+      "Standardized warehousing system",
+      "Operations team",
+      "Logistics operations"
+    ]
+  },
+  "form": {
+    "successToast": "Thank you! VHG Logistics will contact you shortly.",
+    "sheetError": "Could not write to Sheet. Check GOOGLE_SCRIPT_URL or deploy Apps Script.",
+    "invalidError": "Please fill in all required fields.",
+    "modalAriaLabel": "Successful registration message",
+    "modalTitle": "Thank you for registering with VHG Logistics!",
+    "modalClose": "Close",
+    "titlePrefix": "Request",
+    "titleEmphasis": "consultation",
+    "description": "Share your shipping needs so the VHG Logistics team can contact you with a quote and the right solution within 24 hours.",
+    "hotlineLabel": "Support hotline:",
+    "fields": {
+      "fullName": "Full name",
+      "phone": "Phone number",
+      "email": "Email",
+      "company": "Company name",
+      "route": "Route / service of interest",
+      "notes": "Additional notes (cargo type, weight, expected timeline...)"
+    },
+    "placeholders": {
+      "fullName": "John Doe",
+      "phone": "+84 ...",
+      "email": "email@company.com",
+      "company": "Company Ltd.",
+      "notes": "e.g., consumer goods ~300kg, needed before 15/06..."
+    },
+    "submitIdle": "Submit request",
+    "submitLoading": "Sending..."
+  },
+  "footer": {
+    "summary": "VHG Logistics Co., Ltd. — fulfillment solutions and Northern Vietnam warehousing.",
+    "hotlinePrefix": "Hotline:",
+    "rights": "All rights reserved."
+  },
+  "data": {
+    "shippingRoutes": [
+      "China – Vietnam",
+      "Russia – Vietnam",
+      "India – Vietnam",
+      "China – Cambodia",
+      "China – Thailand",
+      "Ocean freight",
+      "Air freight",
+      "Customs / Declaration",
+      "Other / Need consultation"
+    ],
+    "services": [
+      {
+        "title": "Cross-border transportation",
+        "description": "Strong coverage on key China–Vietnam and Southeast Asia lanes. Official customs clearance with fixed departures so partners can plan supply confidently."
+      },
+      {
+        "title": "Multimodal transport",
+        "description": "Door-to-Door solutions for Russia–Vietnam and global routes. Flexible sea (FCL/LCL), road, and air combinations with competitive rates from leading carriers."
+      },
+      {
+        "title": "Warehousing & B2B fulfillment",
+        "description": "Standardized warehouse in Dong Anh, Hanoi. Real-time inventory management, professional packing, and accurate order processing."
+      },
+      {
+        "title": "Customs & import-export entrustment",
+        "description": "Local policy expertise with clearance within up to 36 hours. End-to-end legal procedures and documents (C/O Form E...), ensuring smooth cargo flow."
+      }
+    ],
+    "highlights": [
+      "Multimodal logistics: sea, road, rail",
+      "Door-to-door, warehousing & consolidation",
+      "Network across Hanoi, HCMC, Zhejiang, Guangzhou, Bang Tuong, Moscow",
+      "Lower costs, shorter transit time"
+    ],
+    "offices": [
+      {
+        "name": "Head Office (HCMC)",
+        "address": "46 Bach Dang, Ward 2, Tan Binh, Ho Chi Minh City",
+        "hotline": "0969 265 726",
+        "hotlineHref": "tel:+84969265726"
+      },
+      {
+        "name": "Hanoi Branch",
+        "address": "No. 20, D09, Geleximco Urban Area, Le Trong Tan, Duong Noi, Ha Dong",
+        "hotline": "0969 265 726",
+        "hotlineHref": "tel:+84969265726"
+      },
+      {
+        "name": "Hai Phong Branch",
+        "address": "TTC Building, 630 Le Thanh Tong, Hai An District, Hai Phong",
+        "hotline": "0969 265 726",
+        "hotlineHref": "tel:+84969265726"
+      },
+      {
+        "name": "Russia Branch",
+        "address": "1st Tverskaya, Moscow, Russia",
+        "hotline": "+79166602258",
+        "hotlineHref": "tel:+79166602258"
+      },
+      {
+        "name": "China Branch — Guangzhou",
+        "address": "No. 62, Dalang North Road, Baiyun Lake Street, Baiyun District, Guangzhou",
+        "hotline": "15322046958",
+        "hotlineHref": "tel:+8615322046958"
+      },
+      {
+        "name": "China Branch — Zhejiang",
+        "address": "No. 88 Qiushi Road, Beiyuan Street, Yiwu City, Zhejiang Province",
+        "hotline": "15158939112",
+        "hotlineHref": "tel:+8615158939112"
+      }
+    ]
+  }
+}
+

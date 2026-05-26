@@ -1,0 +1,162 @@
+{
+  "nav": {
+    "services": "Dịch vụ",
+    "about": "Về chúng tôi",
+    "consultation": "Đăng ký tư vấn"
+  },
+  "header": {
+    "cta": "Tư vấn ngay",
+    "language": "Ngôn ngữ"
+  },
+  "hero": {
+    "titlePrefix": "Giải pháp",
+    "titleEmphasis": "Fulfillment",
+    "titleSuffix": "xuyên biên giới — Xử lý chính xác, tối ưu vận hành",
+    "description": "VHG Logistics cung cấp dịch vụ hoàn tất đơn hàng (Fulfillment) toàn diện với hệ thống tổng kho tại phía Bắc Việt Nam. Chúng tôi tiếp nhận, quản lý tồn kho, đóng gói, dán nhãn và xử lý giao hàng chặng cuối, giúp doanh nghiệp tháo gỡ gánh nặng vận hành và tăng tốc chuỗi cung ứng.",
+    "primaryCta": "Đăng ký tư vấn miễn phí",
+    "secondaryCta": "Xem website chính thức",
+    "stats": [
+      { "value": "26000m2", "label": "Hệ thống tổng kho hiện đại", "compact": true },
+      { "value": "24h", "label": "Tốc độ đóng gói & xuất kho" },
+      { "value": "Thời gian thực", "label": "Đồng bộ & kiểm soát tồn kho dữ liệu", "compact": true },
+      { "value": "Tối ưu 30%", "label": "Chi phí kho bãi và nhân sự" }
+    ]
+  },
+  "services": {
+    "titlePrefix": "Hệ sinh thái",
+    "titleEmphasis": "Giải pháp toàn diện",
+    "description": "Thiết kế các giải pháp chuỗi cung ứng linh hoạt, may đo riêng cho từng đặc thù ngành hàng, giúp doanh nghiệp tối ưu chi phí vận hành và tăng tốc độ tiếp cận thị trường."
+  },
+  "about": {
+    "titlePrefix": "Vì sao chọn",
+    "titleEmphasis": "VHG Logistics",
+    "titleSuffix": "?",
+    "p1": "Công ty vận tải quốc tế với mạng lưới văn phòng tại các cảng lớn, tập trung Hà Nội, TP.HCM, Quảng Châu và Moscow. Đội ngũ nhân viên giàu kinh nghiệm từ nhiều quốc gia — cam kết biến các lộ trình xuyên biên giới phức tạp trở nên đơn giản, minh bạch và an toàn nhất.",
+    "p2Prefix": "Ngoài tuyến Việt – Trung, chúng tôi cung cấp vận chuyển",
+    "p2Strong1": "Trung Quốc – Campuchia",
+    "p2Middle": "và",
+    "p2Strong2": "Trung Quốc – Thái Lan",
+    "p2Suffix": ", hàng tiêu dùng, gia dụng và thương mại điện tử.",
+    "galleryCaption": "Hình ảnh kho bãi, container và đội ngũ vận hành",
+    "galleryAlt": [
+      "Kho bãi VHG Logistics",
+      "Khu vực lưu kho và phân loại hàng",
+      "Đóng gói và xử lý đơn hàng",
+      "Container và vận chuyển",
+      "Kho tổng và bốc xếp hàng hóa",
+      "Hệ thống kho bãi tiêu chuẩn",
+      "Đội ngũ vận hành",
+      "Đội ngũ và hoạt động logistics"
+    ]
+  },
+  "form": {
+    "successToast": "Cảm ơn bạn! VHG Logistics sẽ liên hệ trong thời gian sớm nhất.",
+    "sheetError": "Không ghi được vào Sheet. Kiểm tra GOOGLE_SCRIPT_URL hoặc deploy Apps Script.",
+    "invalidError": "Vui lòng điền đầy đủ thông tin.",
+    "modalAriaLabel": "Thông báo đăng ký thành công",
+    "modalTitle": "Cảm ơn quý khách đã chọn đăng ký dịch vụ tại VHG Logistics!",
+    "modalClose": "Đóng",
+    "titlePrefix": "Đăng ký",
+    "titleEmphasis": "tư vấn",
+    "description": "Hãy chia sẻ nhu cầu vận chuyển của doanh nghiệp bạn để đội ngũ VHG Logistics liên hệ báo giá và tư vấn giải pháp phù hợp trong vòng 24 giờ.",
+    "hotlineLabel": "Hotline hỗ trợ:",
+    "fields": {
+      "fullName": "Họ và tên",
+      "phone": "Số điện thoại",
+      "email": "Email",
+      "company": "Tên công ty",
+      "route": "Tuyến hàng / dịch vụ quan tâm",
+      "notes": "Ghi chú thêm về hàng hóa (loại hàng, khối lượng, thời gian dự kiến...)"
+    },
+    "placeholders": {
+      "fullName": "Nguyễn Văn A",
+      "phone": "09xx xxx xxx",
+      "email": "email@congty.com",
+      "company": "Công ty TNHH ...",
+      "notes": "Ví dụ: hàng tiêu dùng ~300kg, cần nhận trước 15/06..."
+    },
+    "submitIdle": "Gửi đăng ký",
+    "submitLoading": "Đang gửi..."
+  },
+  "footer": {
+    "summary": "Công ty TNHH Tiếp vận VHG — giải pháp Fulfillment, tổng kho phía Bắc Việt Nam.",
+    "hotlinePrefix": "Hotline:",
+    "rights": "All rights reserved."
+  },
+  "data": {
+    "shippingRoutes": [
+      "Trung Quốc – Việt Nam",
+      "Nga – Việt Nam",
+      "Ấn Độ – Việt Nam",
+      "Trung Quốc – Campuchia",
+      "Trung Quốc – Thái Lan",
+      "Đường biển",
+      "Đường hàng không",
+      "Hải quan / Khai báo",
+      "Khác / Cần tư vấn"
+    ],
+    "services": [
+      {
+        "title": "Vận tải xuyên biên giới",
+        "description": "Khai thác thế mạnh các tuyến trọng điểm Trung Quốc – Việt Nam và Đông Nam Á. Vận chuyển chính ngạch, lịch trình khởi hành cố định giúp đối tác chủ động hoàn toàn nguồn hàng."
+      },
+      {
+        "title": "Vận tải đa phương thức",
+        "description": "Giải pháp Door-to-Door chuyên sâu tuyến Nga – Việt và toàn cầu. Phối hợp linh hoạt đường biển (FCL/LCL), đường bộ và hàng không với cước phí cạnh tranh từ các hãng tàu top đầu."
+      },
+      {
+        "title": "Lưu kho & fulfillment B2B",
+        "description": "Hệ thống tổng kho tiêu chuẩn tại Đông Anh, Hà Nội. Tích hợp công nghệ quản lý tồn kho thời gian thực, đóng gói và xử lý đơn hàng chuyên nghiệp, chính xác."
+      },
+      {
+        "title": "Hải quan & ủy thác XNK",
+        "description": "Đội ngũ am hiểu chính sách bản địa, cam kết thông quan tối đa 36 giờ. Xử lý trọn gói các thủ tục pháp lý, chứng từ (C/O Form E...), đảm bảo luồng hàng lưu thông."
+      }
+    ],
+    "highlights": [
+      "Logistics đa phương thức: biển, bộ, đường sắt",
+      "Door-to-door, kho bãi & xử lý hàng lẻ",
+      "Mạng lưới Hà Nội, TP.HCM, Chiết Giang, Quảng Châu, Bằng Tường, Moscow",
+      "Tiết kiệm chi phí, rút ngắn thời gian vận chuyển"
+    ],
+    "offices": [
+      {
+        "name": "Trụ sở TP.HCM",
+        "address": "46 Bạch Đằng, Phường 2, Tân Bình, TP. Hồ Chí Minh",
+        "hotline": "0969 265 726",
+        "hotlineHref": "tel:+84969265726"
+      },
+      {
+        "name": "Chi nhánh Hà Nội",
+        "address": "Số 20, D09, KĐT Geleximco, Lê Trọng Tấn, Dương Nội, Hà Đông",
+        "hotline": "0969 265 726",
+        "hotlineHref": "tel:+84969265726"
+      },
+      {
+        "name": "Chi nhánh Hải Phòng",
+        "address": "TTC Building, 630 Lê Thánh Tông, Quận Hải An, Hải Phòng",
+        "hotline": "0969 265 726",
+        "hotlineHref": "tel:+84969265726"
+      },
+      {
+        "name": "Chi nhánh Liên Bang Nga",
+        "address": "1st Tverskaya, Moscow, Nga.",
+        "hotline": "+79166602258",
+        "hotlineHref": "tel:+79166602258"
+      },
+      {
+        "name": "Chi nhánh Trung Quốc — Quảng Châu",
+        "address": "No. 62, Dalang North Road, Baiyun Lake Street, Baiyun District, Guangzhou",
+        "hotline": "15322046958",
+        "hotlineHref": "tel:+8615322046958"
+      },
+      {
+        "name": "Chi nhánh Trung Quốc — Chiết Giang",
+        "address": "No. 88 Qiushi Road, Beiyuan Street, Yiwu City, Zhejiang Province",
+        "hotline": "15158939112",
+        "hotlineHref": "tel:+8615158939112"
+      }
+    ]
+  }
+}
+

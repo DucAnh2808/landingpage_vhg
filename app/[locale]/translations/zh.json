@@ -1,0 +1,162 @@
+{
+  "nav": {
+    "services": "服务",
+    "about": "关于我们",
+    "consultation": "咨询登记"
+  },
+  "header": {
+    "cta": "立即咨询",
+    "language": "语言"
+  },
+  "hero": {
+    "titlePrefix": "跨境",
+    "titleEmphasis": "Fulfillment",
+    "titleSuffix": "— 精准处理，优化运营",
+    "description": "VHG Logistics 提供一站式订单履约（Fulfillment）服务，并在越南北部拥有现代化总仓体系。我们负责收货、库存管理、打包、贴标及末端交付处理，帮助企业减轻运营负担，加速供应链效率。",
+    "primaryCta": "免费咨询登记",
+    "secondaryCta": "查看官网",
+    "stats": [
+      { "value": "26,000㎡", "label": "现代化总仓体系", "compact": true },
+      { "value": "24小时", "label": "打包与出库速度" },
+      { "value": "实时", "label": "库存同步与管控", "compact": true },
+      { "value": "优化30%", "label": "仓储与人力成本" }
+    ]
+  },
+  "services": {
+    "titlePrefix": "全链路",
+    "titleEmphasis": "综合解决方案",
+    "description": "为不同行业量身定制灵活的供应链方案，帮助企业优化运营成本，加速市场触达。"
+  },
+  "about": {
+    "titlePrefix": "为什么选择",
+    "titleEmphasis": "VHG Logistics",
+    "titleSuffix": "？",
+    "p1": "我们是一家国际物流企业，在主要港口设有办公网络，重点覆盖河内、胡志明市、广州与莫斯科。经验丰富的多国团队致力于把复杂的跨境线路变得更简单、透明与安全。",
+    "p2Prefix": "除越中线路外，我们还提供",
+    "p2Strong1": "中国—柬埔寨",
+    "p2Middle": "以及",
+    "p2Strong2": "中国—泰国",
+    "p2Suffix": "等线路服务，覆盖日用消费品、家居及跨境电商。",
+    "galleryCaption": "仓库、集装箱与运营团队实景",
+    "galleryAlt": [
+      "VHG Logistics 仓库",
+      "存储与分拣区域",
+      "打包与订单处理",
+      "集装箱与运输",
+      "总仓与装卸作业",
+      "标准化仓储系统",
+      "运营团队",
+      "物流运营"
+    ]
+  },
+  "form": {
+    "successToast": "感谢您！VHG Logistics 将尽快与您联系。",
+    "sheetError": "写入 Sheet 失败。请检查 GOOGLE_SCRIPT_URL 或重新部署 Apps Script。",
+    "invalidError": "请填写完整信息。",
+    "modalAriaLabel": "登记成功提示",
+    "modalTitle": "感谢您选择在 VHG Logistics 登记服务！",
+    "modalClose": "关闭",
+    "titlePrefix": "登记",
+    "titleEmphasis": "咨询",
+    "description": "请分享贵司的运输需求，我们将在 24 小时内联系报价并提供合适方案。",
+    "hotlineLabel": "服务热线：",
+    "fields": {
+      "fullName": "姓名",
+      "phone": "电话",
+      "email": "邮箱",
+      "company": "公司名称",
+      "route": "关注线路 / 服务",
+      "notes": "补充说明（货物类型、重量、预计时间…）"
+    },
+    "placeholders": {
+      "fullName": "张三",
+      "phone": "+86 / +84 ...",
+      "email": "email@company.com",
+      "company": "某某有限公司",
+      "notes": "例如：日用品约300kg，需要在 15/06 前到达…"
+    },
+    "submitIdle": "提交登记",
+    "submitLoading": "提交中..."
+  },
+  "footer": {
+    "summary": "VHG Logistics 有限公司 — 订单履约解决方案与越南北部总仓服务。",
+    "hotlinePrefix": "热线：",
+    "rights": "版权所有。"
+  },
+  "data": {
+    "shippingRoutes": [
+      "中国 – 越南",
+      "俄罗斯 – 越南",
+      "印度 – 越南",
+      "中国 – 柬埔寨",
+      "中国 – 泰国",
+      "海运",
+      "空运",
+      "清关 / 申报",
+      "其他 / 需要咨询"
+    ],
+    "services": [
+      {
+        "title": "跨境运输",
+        "description": "覆盖中国–越南及东南亚重点线路。正规清关，固定发车/船期，便于合作伙伴稳定备货与计划。"
+      },
+      {
+        "title": "多式联运",
+        "description": "俄罗斯–越南及全球线路的 Door-to-Door 解决方案。灵活组合海运（FCL/LCL）、陆运与空运，提供具有竞争力的运价。"
+      },
+      {
+        "title": "仓储与 B2B 履约",
+        "description": "河内东英标准化总仓。实时库存管理，专业打包与精准订单处理。"
+      },
+      {
+        "title": "清关与进出口委托",
+        "description": "熟悉当地政策，最快 36 小时内通关。提供全套手续与单证（C/O Form E 等），保障货物流转顺畅。"
+      }
+    ],
+    "highlights": [
+      "多式联运：海运、陆运、铁路",
+      "门到门、仓储与拼箱处理",
+      "网络覆盖河内、胡志明市、浙江、广州、凭祥、莫斯科",
+      "降低成本，缩短运输时效"
+    ],
+    "offices": [
+      {
+        "name": "胡志明市总部",
+        "address": "46 Bach Dang, Ward 2, Tan Binh, Ho Chi Minh City",
+        "hotline": "0969 265 726",
+        "hotlineHref": "tel:+84969265726"
+      },
+      {
+        "name": "河内分公司",
+        "address": "No. 20, D09, Geleximco Urban Area, Le Trong Tan, Duong Noi, Ha Dong",
+        "hotline": "0969 265 726",
+        "hotlineHref": "tel:+84969265726"
+      },
+      {
+        "name": "海防分公司",
+        "address": "TTC Building, 630 Le Thanh Tong, Hai An District, Hai Phong",
+        "hotline": "0969 265 726",
+        "hotlineHref": "tel:+84969265726"
+      },
+      {
+        "name": "俄罗斯分公司",
+        "address": "1st Tverskaya, Moscow, Russia",
+        "hotline": "+79166602258",
+        "hotlineHref": "tel:+79166602258"
+      },
+      {
+        "name": "中国分公司—广州",
+        "address": "No. 62, Dalang North Road, Baiyun Lake Street, Baiyun District, Guangzhou",
+        "hotline": "15322046958",
+        "hotlineHref": "tel:+8615322046958"
+      },
+      {
+        "name": "中国分公司—浙江",
+        "address": "No. 88 Qiushi Road, Beiyuan Street, Yiwu City, Zhejiang Province",
+        "hotline": "15158939112",
+        "hotlineHref": "tel:+8615158939112"
+      }
+    ]
+  }
+}
+

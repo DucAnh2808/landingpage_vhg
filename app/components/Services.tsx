@@ -1,23 +1,23 @@
-import { SERVICES } from "@/lib/constants";
+import type { Dictionary } from "../[locale]/translations";
 
-export function Services() {
+export function Services({ dict }: { dict: Dictionary }) {
   return (
     <section id="dich-vu" className="border-b border-vhg-border py-16 sm:py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="max-w-2xl">
           <h2 className="text-2xl font-bold sm:text-3xl">
-            Hệ sinh thái{" "}
-            <span className="italic text-vhg-yellow">Giải pháp toàn diện</span>
+            {dict.services.titlePrefix}{" "}
+            <span className="italic text-vhg-yellow">
+              {dict.services.titleEmphasis}
+            </span>
           </h2>
           <p className="mt-3 text-vhg-muted">
-            Thiết kế các giải pháp chuỗi cung ứng linh hoạt, may đo riêng cho
-            từng đặc thù ngành hàng, giúp doanh nghiệp tối ưu chi phí vận hành
-            và tăng tốc độ tiếp cận thị trường.
+            {dict.services.description}
           </p>
         </div>
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2">
-          {SERVICES.map((service, i) => (
+          {dict.data.services.map((service, i) => (
             <article
               key={service.title}
               className="group rounded-2xl border border-vhg-border bg-vhg-surface p-6 transition-colors hover:border-vhg-yellow/50"

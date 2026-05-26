@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { COMPANY, OFFICES } from "@/lib/constants";
+import { COMPANY } from "@/lib/constants";
+import type { Dictionary } from "../[locale]/translations";
 
-export function SiteFooter() {
+export function SiteFooter({ dict }: { dict: Dictionary }) {
   const year = new Date().getFullYear();
 
   return (
@@ -19,8 +20,7 @@ export function SiteFooter() {
               unoptimized
             />
             <p className="mt-3 max-w-xs text-vhg-muted">
-              {COMPANY.legalName} — giải pháp Fulfillment, tổng kho phía Bắc
-              Việt Nam.
+              {dict.footer.summary}
             </p>
           </div>
           <div className="flex flex-col gap-2">
@@ -28,7 +28,7 @@ export function SiteFooter() {
               href={COMPANY.hotlineHref}
               className="font-bold text-vhg-yellow hover:underline"
             >
-              Hotline: {COMPANY.hotline}
+              {dict.footer.hotlinePrefix} {COMPANY.hotline}
             </a>
             <a
               href={COMPANY.website}
@@ -42,19 +42,19 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-10 grid gap-6 sm:grid-cols-3">
-          {OFFICES.map((office) => (
+          {dict.data.offices.map((office) => (
             <div key={office.name}>
               <h3 className="font-bold text-vhg-yellow">{office.name}</h3>
               <p className="mt-2 leading-relaxed text-vhg-muted">
                 {office.address}
               </p>
               <p className="mt-1 text-vhg-muted">
-                Hotline:{" "}
+                {dict.footer.hotlinePrefix}{" "}
                 <a
-                  href={office.hotlineHref}
+                  href={office.hotlineHref ?? COMPANY.hotlineHref}
                   className="text-foreground hover:text-vhg-yellow"
                 >
-                  {office.hotline}
+                  {office.hotline ?? COMPANY.hotline}
                 </a>
               </p>
             </div>
@@ -62,7 +62,7 @@ export function SiteFooter() {
         </div>
 
         <p className="mt-10 text-center text-xs text-vhg-muted">
-          © {year} VHG Co., Ltd. All rights reserved. ·{" "}
+          © {year} VHG Co., Ltd. {dict.footer.rights} ·{" "}
           <Link
             href={COMPANY.website}
             target="_blank"
