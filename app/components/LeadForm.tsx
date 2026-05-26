@@ -29,6 +29,7 @@ export function LeadForm() {
     "idle",
   );
   const [message, setMessage] = useState("");
+  const [showThanks, setShowThanks] = useState(false);
 
   useEffect(() => {
     const sent = searchParams.get("sent");
@@ -38,6 +39,7 @@ export function LeadForm() {
       setMessage(
         "Cảm ơn bạn! VHG Logistics sẽ liên hệ trong thời gian sớm nhất.",
       );
+      setShowThanks(true);
     } else if (error === "sheet") {
       setStatus("error");
       setMessage(
@@ -74,6 +76,7 @@ export function LeadForm() {
       setMessage(
         "Cảm ơn bạn! VHG Logistics sẽ liên hệ trong thời gian sớm nhất.",
       );
+      setShowThanks(true);
       setForm(initial);
       window.history.replaceState(null, "", "#dang-ky");
     } catch (err) {
@@ -93,6 +96,31 @@ export function LeadForm() {
   return (
     <section id="dang-ky" className="border-b border-vhg-border py-16 sm:py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        {showThanks && (
+          <div
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 p-4"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Thông báo đăng ký thành công"
+            onClick={() => setShowThanks(false)}
+          >
+            <div
+              className="w-full max-w-md rounded-2xl border border-vhg-border bg-background p-6 shadow-xl"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <p className="text-center text-base font-semibold text-foreground">
+                Cảm ơn quý khách đã chọn đăng ký dịch vụ tại VHG Logistics!
+              </p>
+              <button
+                type="button"
+                className="mt-5 w-full rounded-full bg-vhg-yellow py-3 text-sm font-bold text-vhg-charcoal transition-colors hover:bg-[var(--vhg-yellow-hover)]"
+                onClick={() => setShowThanks(false)}
+              >
+                Đóng
+              </button>
+            </div>
+          </div>
+        )}
         <div className="grid gap-10 lg:grid-cols-5 lg:gap-16">
           <div className="lg:col-span-2">
             <h2 className="text-2xl font-bold sm:text-3xl">
