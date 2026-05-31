@@ -25,6 +25,11 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
   return {
     title,
     description: dict.hero.description,
+    verification: {
+      other: {
+        "facebook-domain-verification": "nzun0bnhnx5vp4y0q7qsi0wqokgrsd",
+      },
+    },
     icons: {
       icon: [{ url: "/logo.png" }],
       apple: [{ url: "/logo.png" }],
